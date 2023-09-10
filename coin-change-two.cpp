@@ -25,7 +25,13 @@ int main(){
             }
         }
     }
-    cout<<dp[n][s]<<endl;
+    if(dp[n][s] == INT_MAX-1) {
+        cout<<"Not possible"<<endl;
+    }
+    else {
+        cout<<dp[n][s]<<endl;
+    }
+    
     
     return 0;
 }
